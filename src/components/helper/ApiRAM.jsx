@@ -12,13 +12,15 @@ export function refreshPage() {
 }
 
 //Async API
-export const getImg = async (name, img) => {
+export const getImg = async (dataApi ,name, img, location) => {
     //Intenta traer los datos de la API
     try {
         const resp = await fetch(`https://rickandmortyapi.com/api/character/${getRandomInt(1, 826)}`)//Num personajes = 826
         const data = await resp.json()
+        dataApi(data)
         name(data.name)
         img(data.image)
+        location(data.location.name)
     }
     //Si da un error hace esto
     catch (error) {

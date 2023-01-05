@@ -1,16 +1,17 @@
 //HEADER//
 
 .header_cont{
-    height: 937px;
+    height:max-content;
+    margin-bottom: 90px;
 
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: center;
+
 
     .title{
         font-size: 50px;
-        margin-bottom: 60px;
+        margin: 55px;
     }
 }
 
