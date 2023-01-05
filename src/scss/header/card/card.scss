@@ -1,0 +1,44 @@
+//CARD//
+
+.card_cont{
+    width: 40%;
+    height: 500px;
+    background: #00dacf;
+    color: rgb(26, 26, 26);
+    border: 8px solid #a6ff00 ;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card_Title{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .img_character{
+        width: 286px;
+        margin-bottom: 20px;
+    }
+
+    .btn_changue{
+        padding: 15px 80px;
+        background: #004363;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 20px;
+        color: white;
+    }
+
+    .btn_changue:hover{
+        padding: 15px 80px;
+        background: #a6ff00;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 20px;
+        color: rgb(0, 148, 153);
+    }
+
+}
